@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+ background: #f5f5f5; /* हलका grey background */
+  display: flex; /* पूरा body flex box बना दिया */
+  justify-content: center; /* horizontally center */
+  align-items: flex-start; /* vertically ऊपर से start */
+  padding: 60px 20px;
+}
+.app {
+  background: #fff; /* सफेद बॉक्स */
+  padding: 30px 25px;
+  border-radius: 12px; /* कोने गोल */
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12); /* हल्का shadow */
+  width: 100%;
+  max-width: 420px; /* ज़्यादा चौड़ा न हो */
+}
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50;
+}
+form {
+  display: flex; /* input और button एक लाइन में */
+  gap: 10px; /* दोनों के बीच space */
+  margin-bottom: 20px;
+}
+form input {
+  flex: 1; /* बाक़ी जगह ले ले */
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+form button {
+  padding: 10px 18px;
+  background: #2980b9; /* नीला */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+form button:hover {
+  background: #1abc9c; /* hover पे हरा */
+}
+ul {
+  list-style: none;
+}
+li {
+  background: #fafafa;
+  padding: 10px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex; /* task और delete button एक लाइन में */
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed { text-decoration: line-through; opacity: 0.6; }
+
+li span { flex: 1; }
+
+/* delete icon button */
+
+
+.delete-btn i {
+  font-size: 16px;
+  color: #e74c3c; 
+  border:none;
+  cursor: pointer;
+  background: transparent;
+  padding:5px;
+  transition:color 0.3s ease;
+
+}
+.delete-btn i:hover{
+color:#c0392b;
+}
